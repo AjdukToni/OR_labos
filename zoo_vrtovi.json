@@ -1,0 +1,332 @@
+[
+  {
+    "Hrvatski_naziv": "Lav",
+    "Latinski_naziv": "Panthera leo",
+    "Podrijetlo": "Afrika",
+    "Porodica": "Felidae",
+    "Prehrana": "Mesojed",
+    "Ugrozenost": "VU",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2018-06-12",
+        "Ime": "Uganda",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      },
+      {
+        "Datum_rodenja": "2019-09-03",
+        "Ime": "Tayra",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 13,
+    "id": 1
+  },
+  {
+    "Hrvatski_naziv": "Tigar",
+    "Latinski_naziv": "Panthera tigris",
+    "Podrijetlo": "Azija",
+    "Porodica": "Felidae",
+    "Prehrana": "Mesojed",
+    "Ugrozenost": "EN",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2019-11-02",
+        "Ime": "Tara",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      },
+      {
+        "Datum_rodenja": "2017-08-10",
+        "Ime": "Raj",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Slovenija",
+          "Grad": "Ljubljana",
+          "Naziv": "Zoološki vrt Ljubljana",
+          "Web_poveznica": "https://www.zoo.si"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 17,
+    "id": 2
+  },
+  {
+    "Hrvatski_naziv": "Afrički slon",
+    "Latinski_naziv": "Loxodonta africana",
+    "Podrijetlo": "Afrika",
+    "Porodica": "Elephantidae",
+    "Prehrana": "Biljojed",
+    "Ugrozenost": "EN",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2016-09-25",
+        "Ime": "Balu",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      },
+      {
+        "Datum_rodenja": "2015-06-18",
+        "Ime": "Nela",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 65,
+    "id": 3
+  },
+  {
+    "Hrvatski_naziv": "Žirafa",
+    "Latinski_naziv": "Giraffa camelopardalis",
+    "Podrijetlo": "Afrika",
+    "Porodica": "Giraffidae",
+    "Prehrana": "Biljojed",
+    "Ugrozenost": "VU",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2014-06-04",
+        "Ime": "Zara",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 23,
+    "id": 4
+  },
+  {
+    "Hrvatski_naziv": "Crvena panda",
+    "Latinski_naziv": "Ailurus fulgens",
+    "Podrijetlo": "Azija",
+    "Porodica": "Ailuridae",
+    "Prehrana": "Biljojed",
+    "Ugrozenost": "EN",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2021-01-30",
+        "Ime": "Milo",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      },
+      {
+        "Datum_rodenja": "2022-07-17",
+        "Ime": "Luna",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 14,
+    "id": 5
+  },
+  {
+    "Hrvatski_naziv": "Humboldtov pingvin",
+    "Latinski_naziv": "Spheniscus humboldti",
+    "Podrijetlo": "Južna Amerika",
+    "Porodica": "Spheniscidae",
+    "Prehrana": "Mesojed",
+    "Ugrozenost": "VU",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2020-02-14",
+        "Ime": "Kiki",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Slovenija",
+          "Grad": "Ljubljana",
+          "Naziv": "Zoološki vrt Ljubljana",
+          "Web_poveznica": "https://www.zoo.si"
+        }
+      },
+      {
+        "Datum_rodenja": "2018-12-05",
+        "Ime": "Pablo",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 18,
+    "id": 6
+  },
+  {
+    "Hrvatski_naziv": "Merkat",
+    "Latinski_naziv": "Suricata suricatta",
+    "Podrijetlo": "Afrika",
+    "Porodica": "Herpestidae",
+    "Prehrana": "Svejed",
+    "Ugrozenost": "LC",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2021-06-08",
+        "Ime": "Miki",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 16,
+    "id": 7
+  },
+  {
+    "Hrvatski_naziv": "Crveni klokan",
+    "Latinski_naziv": "Osphranter rufus",
+    "Podrijetlo": "Australija",
+    "Porodica": "Macropodidae",
+    "Prehrana": "Biljojed",
+    "Ugrozenost": "LC",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2017-10-19",
+        "Ime": "Roko",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Slovenija",
+          "Grad": "Ljubljana",
+          "Naziv": "Zoološki vrt Ljubljana",
+          "Web_poveznica": "https://www.zoo.si"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 17,
+    "id": 8
+  },
+  {
+    "Hrvatski_naziv": "Kineski leopard",
+    "Latinski_naziv": "Panthera pardus japonensis",
+    "Podrijetlo": "Azija",
+    "Porodica": "Felidae",
+    "Prehrana": "Mesojed",
+    "Ugrozenost": "VU",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2018-04-20",
+        "Ime": "Tadzik",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      },
+      {
+        "Datum_rodenja": "2019-02-11",
+        "Ime": "Odilia",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 22,
+    "id": 9
+  },
+  {
+    "Hrvatski_naziv": "Zapadna nizinska gorila",
+    "Latinski_naziv": "Gorilla gorilla gorilla",
+    "Podrijetlo": "Afrika",
+    "Porodica": "Hominidae",
+    "Prehrana": "Biljojed",
+    "Ugrozenost": "CR",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2006-08-15",
+        "Ime": "Koko",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Austrija",
+          "Grad": "Beč",
+          "Naziv": "Tiergarten Schönbrunn",
+          "Web_poveznica": "https://www.zoovienna.at"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 45,
+    "id": 10
+  },
+  {
+    "Hrvatski_naziv": "Smeđi medvjed",
+    "Latinski_naziv": "Ursus arctos",
+    "Podrijetlo": "Europa",
+    "Porodica": "Ursidae",
+    "Prehrana": "Svejed",
+    "Ugrozenost": "LC",
+    "Zivotinje": [
+      {
+        "Datum_rodenja": "2014-05-23",
+        "Ime": "Albert",
+        "Spol": "M",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      },
+      {
+        "Datum_rodenja": "2015-03-17",
+        "Ime": "Kveta",
+        "Spol": "F",
+        "Zoo": {
+          "Drzava": "Hrvatska",
+          "Grad": "Zagreb",
+          "Naziv": "Zoološki vrt Grada Zagreba",
+          "Web_poveznica": "https://zoo.hr"
+        }
+      }
+    ],
+    "Zivotni_vijek_god": 40,
+    "id": 11
+  }
+]

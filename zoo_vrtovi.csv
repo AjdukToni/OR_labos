@@ -1,0 +1,19 @@
+id,Hrvatski_naziv,Latinski_naziv,Porodica,Zivotni_vijek_god,Prehrana,Podrijetlo,Ugrozenost,Ime,Datum_rodenja,Spol,Zoo_naziv,Zoo_grad,Zoo_drzava,Zoo_web_poveznica
+1,Lav,Panthera leo,Felidae,13,Mesojed,Afrika,VU,Uganda,2018-06-12,M,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+1,Lav,Panthera leo,Felidae,13,Mesojed,Afrika,VU,Tayra,2019-09-03,F,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+2,Tigar,Panthera tigris,Felidae,17,Mesojed,Azija,EN,Tara,2019-11-02,F,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+2,Tigar,Panthera tigris,Felidae,17,Mesojed,Azija,EN,Raj,2017-08-10,M,Zoološki vrt Ljubljana,Ljubljana,Slovenija,https://www.zoo.si
+3,Afrički slon,Loxodonta africana,Elephantidae,65,Biljojed,Afrika,EN,Balu,2016-09-25,M,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+3,Afrički slon,Loxodonta africana,Elephantidae,65,Biljojed,Afrika,EN,Nela,2015-06-18,F,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+4,Žirafa,Giraffa camelopardalis,Giraffidae,23,Biljojed,Afrika,VU,Zara,2014-06-04,F,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+5,Crvena panda,Ailurus fulgens,Ailuridae,14,Biljojed,Azija,EN,Milo,2021-01-30,M,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+5,Crvena panda,Ailurus fulgens,Ailuridae,14,Biljojed,Azija,EN,Luna,2022-07-17,F,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+6,Humboldtov pingvin,Spheniscus humboldti,Spheniscidae,18,Mesojed,Južna Amerika,VU,Kiki,2020-02-14,F,Zoološki vrt Ljubljana,Ljubljana,Slovenija,https://www.zoo.si
+6,Humboldtov pingvin,Spheniscus humboldti,Spheniscidae,18,Mesojed,Južna Amerika,VU,Pablo,2018-12-05,M,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+7,Merkat,Suricata suricatta,Herpestidae,16,Svejed,Afrika,LC,Miki,2021-06-08,M,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+8,Crveni klokan,Osphranter rufus,Macropodidae,17,Biljojed,Australija,LC,Roko,2017-10-19,M,Zoološki vrt Ljubljana,Ljubljana,Slovenija,https://www.zoo.si
+9,Kineski leopard,Panthera pardus japonensis,Felidae,22,Mesojed,Azija,VU,Tadzik,2018-04-20,M,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+9,Kineski leopard,Panthera pardus japonensis,Felidae,22,Mesojed,Azija,VU,Odilia,2019-02-11,F,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+10,Zapadna nizinska gorila,Gorilla gorilla gorilla,Hominidae,45,Biljojed,Afrika,CR,Koko,2006-08-15,M,Tiergarten Schönbrunn,Beč,Austrija,https://www.zoovienna.at
+11,Smeđi medvjed,Ursus arctos,Ursidae,40,Svejed,Europa,LC,Albert,2014-05-23,M,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
+11,Smeđi medvjed,Ursus arctos,Ursidae,40,Svejed,Europa,LC,Kveta,2015-03-17,F,Zoološki vrt Grada Zagreba,Zagreb,Hrvatska,https://zoo.hr
