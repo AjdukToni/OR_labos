@@ -2,12 +2,12 @@
 -- PostgreSQL database dump
 --
 
-\restrict KkJPulQmUT70CPnwwxVb9unA8nsYbO0eqvIAXMOsrmwQ3Y7XpFKUWG8d1hdD9gF
+\restrict 3JNHfq7CURoVjsA4BnN6qgfmIKeAnCQQafDTP4KsHJabMi7bFekwuoPdy9lrT6x
 
 -- Dumped from database version 18.0
 -- Dumped by pg_dump version 18.0
 
--- Started on 2026-11-14 22:45:23
+-- Started on 2026-11-15 00:57:04
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -31,9 +31,9 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.vrsta (
-    vrsta_id integer NOT NULL,
-    naziv_hrv character varying(100) NOT NULL,
-    naziv_lat character varying(100) NOT NULL,
+    id integer CONSTRAINT vrsta_vrsta_id_not_null NOT NULL,
+    hrvatski_naziv character varying(100) CONSTRAINT vrsta_naziv_hrv_not_null NOT NULL,
+    latinski_naziv character varying(100) CONSTRAINT vrsta_naziv_lat_not_null NOT NULL,
     porodica character varying(100) NOT NULL,
     zivotni_vijek_god integer NOT NULL,
     prehrana character varying(50) NOT NULL,
@@ -51,7 +51,7 @@ ALTER TABLE public.vrsta OWNER TO postgres;
 -- Name: vrsta_vrsta_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-ALTER TABLE public.vrsta ALTER COLUMN vrsta_id ADD GENERATED ALWAYS AS IDENTITY (
+ALTER TABLE public.vrsta ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
     SEQUENCE NAME public.vrsta_vrsta_id_seq
     START WITH 1
     INCREMENT BY 1
@@ -132,7 +132,7 @@ ALTER TABLE public.zoo ALTER COLUMN vrt_id ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: vrsta; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.vrsta (vrsta_id, naziv_hrv, naziv_lat, porodica, zivotni_vijek_god, prehrana, podrijetlo, ugrozenost) FROM stdin;
+COPY public.vrsta (id, hrvatski_naziv, latinski_naziv, porodica, zivotni_vijek_god, prehrana, podrijetlo, ugrozenost) FROM stdin;
 1	Lav	Panthera leo	Felidae	13	Mesojed	Afrika	VU
 2	Tigar	Panthera tigris	Felidae	17	Mesojed	Azija	EN
 3	Afrički slon	Loxodonta africana	Elephantidae	65	Biljojed	Afrika	EN
@@ -221,7 +221,7 @@ SELECT pg_catalog.setval('public.zoo_vrt_id_seq', 3, true);
 --
 
 ALTER TABLE ONLY public.vrsta
-    ADD CONSTRAINT vrsta_naziv_lat_key UNIQUE (naziv_lat);
+    ADD CONSTRAINT vrsta_naziv_lat_key UNIQUE (latinski_naziv);
 
 
 --
@@ -230,7 +230,7 @@ ALTER TABLE ONLY public.vrsta
 --
 
 ALTER TABLE ONLY public.vrsta
-    ADD CONSTRAINT vrsta_pkey PRIMARY KEY (vrsta_id);
+    ADD CONSTRAINT vrsta_pkey PRIMARY KEY (id);
 
 
 --
@@ -275,7 +275,7 @@ ALTER TABLE ONLY public.zoo
 --
 
 ALTER TABLE ONLY public.zivotinja
-    ADD CONSTRAINT zivotinja_vrsta_id_fkey FOREIGN KEY (vrsta_id) REFERENCES public.vrsta(vrsta_id);
+    ADD CONSTRAINT zivotinja_vrsta_id_fkey FOREIGN KEY (vrsta_id) REFERENCES public.vrsta(id);
 
 
 --
@@ -287,11 +287,11 @@ ALTER TABLE ONLY public.zivotinja
     ADD CONSTRAINT zivotinja_vrt_id_fkey FOREIGN KEY (vrt_id) REFERENCES public.zoo(vrt_id);
 
 
--- Completed on 2026-11-14 22:45:23
+-- Completed on 2026-11-15 00:57:04
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict KkJPulQmUT70CPnwwxVb9unA8nsYbO0eqvIAXMOsrmwQ3Y7XpFKUWG8d1hdD9gF
+\unrestrict 3JNHfq7CURoVjsA4BnN6qgfmIKeAnCQQafDTP4KsHJabMi7bFekwuoPdy9lrT6x
 

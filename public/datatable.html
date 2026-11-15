@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoološki vrtovi – pregled podataka</title>
+  <meta name="description" content="Otvoreni skup podataka o životinjskim vrstama, pojedinim životinjskim jedinkama i zoološkim vrtovima u kojima žive.">
+  <meta name="author" content="Toni Ajduk">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stranica">
+  <nav>
+    <a href="index.html">Početna</a>
+    <a href="datatable.html">Pregled podataka</a>
+  </nav>
+
+  <h1>Pregled podataka</h1>
+
+  <form id="forma">
+    <label>Polje za pretragu
+      <input type="text" id="q" placeholder="Unesite vrijednost" autocomplete="off">
+    </label>
+    <label>Pretraži po atributu
+      <select id="polje"><option value="">Sva polja (wildcard)</option></select>
+    </label>
+    <button type="submit">Pretraži</button>
+  </form>
+
+  <div class="gumbi">
+    <a class="gumb sekundarni" id="preuzmiCsv" href="/api/podaci/preuzmi?format=csv" download>Preuzmi prikaz (CSV)</a>
+    <a class="gumb sekundarni" id="preuzmiJson" href="/api/podaci/preuzmi?format=json" download>Preuzmi prikaz (JSON)</a>
+  </div>
+
+  <p id="status" role="status">Učitavam podatke… Ako ova poruka ostane, skripta datatable.js se nije učitala.</p>
+
+  <div class="tablica">
+    <table>
+      <thead id="zaglavlje"></thead>
+      <tbody id="tijelo"></tbody>
+    </table>
+  </div>
+</div>
+<script src="datatable.js"></script>
+</body>
+</html>

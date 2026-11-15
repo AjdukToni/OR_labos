@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/AjdukToni/OR_LABOS/main/schema.json",
+  "title": "Zoološki vrtovi",
+  "description": "Skup podataka o životinjskim vrstama, pojedinim jedinkama i zoološkim vrtovima u kojima žive.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Vrsta",
+    "description": "Objekt koji sadrži sve podatke o jednoj životinjskoj vrsti i njezinim jedinkama.",
+    "required": [
+      "id",
+      "Hrvatski_naziv",
+      "Latinski_naziv",
+      "Porodica",
+      "Zivotni_vijek_god",
+      "Prehrana",
+      "Podrijetlo",
+      "Ugrozenost",
+      "Zivotinje"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "Identifikator",
+        "description": "Jedinstveni identifikator vrste.",
+        "minimum": 1
+      },
+      "Hrvatski_naziv": {
+        "type": "string",
+        "title": "Hrvatski naziv",
+        "description": "Naziv vrste na hrvatskom jeziku."
+      },
+      "Latinski_naziv": {
+        "type": "string",
+        "title": "Latinski naziv",
+        "description": "Znanstveni (latinski) naziv vrste."
+      },
+      "Porodica": {
+        "type": "string",
+        "title": "Porodica",
+        "description": "Taksonomska porodica kojoj vrsta pripada."
+      },
+      "Zivotni_vijek_god": {
+        "type": "integer",
+        "title": "Životni vijek",
+        "description": "Prosječni životni vijek vrste u godinama.",
+        "minimum": 1
+      },
+      "Prehrana": {
+        "type": "string",
+        "title": "Prehrana",
+        "description": "Način prehrane vrste.",
+        "enum": [
+          "Mesojed",
+          "Biljojed",
+          "Svejed"
+        ]
+      },
+      "Podrijetlo": {
+        "type": "string",
+        "title": "Podrijetlo",
+        "description": "Kontinent ili područje podrijetla vrste."
+      },
+      "Ugrozenost": {
+        "type": "string",
+        "title": "Ugroženost",
+        "description": "Status ugroženosti prema IUCN Crvenoj listi.",
+        "enum": [
+          "LC",
+          "NT",
+          "VU",
+          "EN",
+          "CR",
+          "EW",
+          "EX",
+          "DD"
+        ]
+      },
+      "Zivotinje": {
+        "type": "array",
+        "title": "Životinje",
+        "description": "Popis jedinki koje pripadaju vrsti.",
+        "items": {
+          "type": "object",
+          "title": "Životinja",
+          "description": "Pojedina životinjska jedinka i vrt u kojem živi.",
+          "required": [
+            "Ime",
+            "Datum_rodenja",
+            "Spol",
+            "Zoo"
+          ],
+          "properties": {
+            "Ime": {
+              "type": "string",
+              "title": "Ime",
+              "description": "Ime životinjske jedinke."
+            },
+            "Datum_rodenja": {
+              "type": "string",
+              "title": "Datum rođenja",
+              "description": "Datum rođenja jedinke u formatu GGGG-MM-DD.",
+              "format": "date"
+            },
+            "Spol": {
+              "type": "string",
+              "title": "Spol",
+              "description": "Spol jedinke: M (mužjak) ili F (ženka).",
+              "enum": [
+                "M",
+                "F"
+              ]
+            },
+            "Zoo": {
+              "type": "object",
+              "title": "Zoološki vrt",
+              "description": "Zoološki vrt u kojem jedinka živi.",
+              "required": [
+                "Naziv",
+                "Grad",
+                "Drzava",
+                "Web_poveznica"
+              ],
+              "properties": {
+                "Naziv": {
+                  "type": "string",
+                  "title": "Naziv vrta",
+                  "description": "Naziv zoološkog vrta."
+                },
+                "Grad": {
+                  "type": "string",
+                  "title": "Grad",
+                  "description": "Grad u kojem se zoološki vrt nalazi."
+                },
+                "Drzava": {
+                  "type": "string",
+                  "title": "Država",
+                  "description": "Država u kojoj se zoološki vrt nalazi."
+                },
+                "Web_poveznica": {
+                  "type": "string",
+                  "title": "Web poveznica",
+                  "description": "Adresa web stranice zoološkog vrta.",
+                  "format": "uri"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ Napomena: podaci o vrstama temelje se na javno dostupnim izvorima. Imena jedinki
 - **Broj vrsta (objekata u JSON-u):** 11
 - **Broj jedinki (redaka u CSV-u, bez zaglavlja):** 18
 - **Broj zooloških vrtova:** 3
-- **Broj atributa:** 14 (uz identifikator **id** vrste)
+- **Broj atributa (stupaca u CSV-u):** 15
 - **Datum izrade:** 2026-10-31
 - **Baza podataka:** PostgreSQL
 - **Izvori:** IUCN Red List (status ugroženosti), javno dostupni opisi vrsta, web stranice zooloških vrtova
@@ -37,13 +37,13 @@ Napomena: podaci o vrstama temelje se na javno dostupnim izvorima. Imena jedinki
 
 ## Opis atributa
 
-Nazivi atributa jednaki su ključevima u JSON-u, odnosno stupcima u CSV-u.
+Nazivi u nastavku odgovaraju nazivima stupaca u CSV datoteci. CSV sadrži ukupno 15 stupaca.
 
 ### Vrsta
 
-- **vrsta_id:** jedinstveni identifikator vrste
-- **naziv_hrv:** naziv vrste životinje na hrvatskom jeziku
-- **naziv_lat:** znanstveni (latinski) naziv vrste, jedinstven za svaku vrstu
+- **id:** jedinstveni identifikator vrste
+- **Hrvatski_naziv:** naziv vrste životinje na hrvatskom jeziku
+- **Latinski_naziv:** znanstveni (latinski) naziv vrste, jedinstven za svaku vrstu
 - **Porodica:** taksonomska porodica kojoj vrsta pripada
 - **Zivotni_vijek_god:** prosječni životni vijek vrste u godinama
 - **Prehrana:** način prehrane (Mesojed, Biljojed ili Svejed)
@@ -54,20 +54,18 @@ Nazivi atributa jednaki su ključevima u JSON-u, odnosno stupcima u CSV-u.
 
 U JSON-u su ovi atributi u listi **Zivotinje**, a u CSV-u su zasebni stupci.
 
-- **jedinka_id:** jedinstveni identifikator jedinke
 - **Ime:** ime životinjske jedinke
 - **Datum_rodenja:** datum rođenja jedinke u formatu GGGG-MM-DD
 - **Spol:** spol jedinke (M za mužjaka, F za ženku)
 
 ### Zoološki vrt
 
-U JSON-u su ovi atributi u objektu **Zoo** unutar svake jedinke. U CSV-u se stupci zovu **Zoo_naziv**, **Zoo_grad**, **Zoo_drzava** i **Zoo_web_poveznica**.
+U JSON-u su podaci o zoološkom vrtu u objektu **Zoo** unutar svake jedinke. U CSV-u su predstavljeni sljedećim stupcima:
 
-- **vrt_id:** jedinstveni identifikator zoološkog vrta
-- **Naziv:** naziv zoološkog vrta
-- **Grad:** grad u kojem se zoološki vrt nalazi
-- **Drzava:** država u kojoj se zoološki vrt nalazi
-- **Web_poveznica:** adresa web stranice zoološkog vrta
+- **Zoo_naziv:** naziv zoološkog vrta
+- **Zoo_grad:** grad u kojem se zoološki vrt nalazi
+- **Zoo_drzava:** država u kojoj se zoološki vrt nalazi
+- **Zoo_web_poveznica:** adresa web stranice zoološkog vrta
 
 ### Kodovi statusa ugroženosti (IUCN)
 
@@ -80,6 +78,6 @@ U JSON-u su ovi atributi u objektu **Zoo** unutar svake jedinke. U CSV-u se stup
 - **EX:** izumrla (Extinct)
 - **DD:** nedovoljno podataka (Data Deficient)
 
-**Licencija**
+## Licencija
 
 Ovaj skup podataka dostupan je pod licencijom Creative Commons Imenovanje 4.0 međunarodna (CC BY 4.0). Dopušteno je slobodno kopirati, dijeliti i prilagođavati podatke, uz obvezno navođenje autora (Toni Ajduk).
