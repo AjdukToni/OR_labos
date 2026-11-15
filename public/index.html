@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoološki vrtovi – otvoreni skup podataka</title>
+  <meta name="description" content="Otvoreni skup podataka o životinjskim vrstama, pojedinim životinjskim jedinkama i zoološkim vrtovima u kojima žive.">
+  <meta name="author" content="Toni Ajduk">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stranica"> 
+
+  <h1>Zoološki vrtovi</h1>
+  <p>Otvoreni skup podataka o životinjskim vrstama, pojedinim životinjskim jedinkama i zoološkim vrtovima u kojima žive. Izrađen je za laboratorijsku vježbu iz kolegija Otvoreno računarstvo (FER, Sveučilište u Zagrebu).</p>
+
+  <h2>Preuzimanje podataka</h2>
+  <p>Cijeli skup dostupan je u dva strojno čitljiva formata, a metapodaci kao JSON Schema.</p>
+  <div class="gumbi">
+    <a class="gumb" href="zoo_vrtovi.csv" download>Preuzmi CSV</a>
+    <a class="gumb" href="zoo_vrtovi.json" download>Preuzmi JSON</a>
+    <a class="gumb sekundarni" href="schema.json">JSON Schema</a>
+    <a class="gumb sekundarni" href="datatable.html">Pretraži podatke</a>
+  </div>
+
+  <h2>Opis skupa podataka</h2>
+  <p>Skup opisuje 11 životinjskih vrsta (npr. lav, tigar, afrički slon, žirafa, crvena panda), 18 životinjskih jedinki i 3 zoološka vrta (Zagreb, Ljubljana i Beč). Za svaku vrstu navedeni su porodica, prosječni životni vijek, prehrana, podrijetlo i status ugroženosti prema IUCN-ovoj Crvenoj listi. Uz vrstu je naveden popis jedinki koje joj pripadaju, a uz svaku jedinku zoološki vrt u kojem živi.</p>
+  <p>Podaci su modelirani kao veza roditelj-dijete: jedna vrsta ima više jedinki, a jedan zoološki vrt drži više jedinki. U JSON-u je vrsta glavni objekt, jedinke su ugniježđena lista, a zoološki vrt ugniježđeni objekt uz svaku jedinku. U CSV-u se podaci o vrsti ponavljaju u svakom retku jedinke.</p>
+  <p>Napomena: podaci o vrstama temelje se na javno dostupnim izvorima. Imena jedinki, datumi rođenja i njihov smještaj u pojedinim vrtovima su ilustrativni i ne odgovaraju stvarnim vrtovima.</p>
+
+  <h2>Metapodaci</h2>
+  <dl>
+    <dt>Autor</dt><dd>Toni Ajduk</dd>
+    <dt>Verzija</dt><dd>2.0</dd>
+    <dt>Licencija</dt><dd>Creative Commons Imenovanje 4.0 međunarodna (CC BY 4.0)</dd>
+    <dt>Jezik podataka</dt><dd>hrvatski</dd>
+    <dt>Formati</dt><dd>JSON, CSV</dd>
+    <dt>Kodiranje</dt><dd>UTF-8</dd>
+    <dt>Broj vrsta</dt><dd>11</dd>
+    <dt>Broj jedinki</dt><dd>18</dd>
+    <dt>Broj zooloških vrtova</dt><dd>3</dd>
+    <dt>Baza podataka</dt><dd>PostgreSQL</dd>
+    <dt>Izvori</dt><dd>IUCN Red List, javno dostupni opisi vrsta, web stranice zooloških vrtova</dd>
+  </dl>
+
+  <h2>Opis atributa</h2>
+  <p>Nazivi atributa jednaki su ključevima u JSON-u, odnosno stupcima u CSV-u.</p>
+  <dl>
+    <dt>id</dt><dd>jedinstveni identifikator vrste</dd>
+    <dt>Hrvatski_naziv</dt><dd>naziv vrste na hrvatskom jeziku</dd>
+    <dt>Latinski_naziv</dt><dd>znanstveni (latinski) naziv vrste</dd>
+    <dt>Porodica</dt><dd>taksonomska porodica vrste</dd>
+    <dt>Zivotni_vijek_god</dt><dd>prosječni životni vijek vrste u godinama</dd>
+    <dt>Prehrana</dt><dd>Mesojed, Biljojed ili Svejed</dd>
+    <dt>Podrijetlo</dt><dd>kontinent ili područje podrijetla vrste</dd>
+    <dt>Ugrozenost</dt><dd>IUCN kôd ugroženosti (LC, NT, VU, EN, CR, EW, EX, DD)</dd>
+    <dt>Ime</dt><dd>ime životinjske jedinke</dd>
+    <dt>Datum_rodenja</dt><dd>datum rođenja jedinke (GGGG-MM-DD)</dd>
+    <dt>Spol</dt><dd>M (mužjak) ili F (ženka)</dd>
+    <dt>Zoo_naziv</dt><dd>naziv zoološkog vrta (u JSON-u <code>Zoo.Naziv</code>)</dd>
+    <dt>Zoo_grad</dt><dd>grad u kojem se vrt nalazi</dd>
+    <dt>Zoo_drzava</dt><dd>država u kojoj se vrt nalazi</dd>
+    <dt>Zoo_web_poveznica</dt><dd>web stranica zoološkog vrta</dd>
+  </dl>
+</div>
+</body>
+</html>
